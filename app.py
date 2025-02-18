@@ -19,7 +19,7 @@ class AImagine:
         # Gemini API setup
         self.GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")  # Replace with your API key
         genai.configure(api_key=self.GEMINI_API_KEY)
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self.model = genai.GenerativeModel('gemini-2.0-flash')
         
         # Drawing variables
         self.stroke_size = 2
